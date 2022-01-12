@@ -17,3 +17,37 @@ def is_multiple(n, m):
         return True
     else:
         return False
+
+# R-1.2
+"""
+Write a short Python function, is_even(k),
+that takes an integer value and returns True if K is even,
+and False otherwise.However, your function 
+cannot use the multiplication and modulo or division operator
+"""
+
+#def is_even(k):
+    #if k
+
+# R-1.3
+"""
+Write a short Python , minmax(data), that takes a sequence of
+one or more numbers and returns the smallest and largest numbers in the 
+form of a tuple of length two. Do not use the built-in functions min or max
+in implementing the solutions
+"""
+
+def minmax(data):
+   
+    maxi = data[0]
+    mini = data[0]
+    
+    for ele in data:
+        if ele > maxi :
+            maxi = ele
+        
+        elif ele < mini:
+            mini = ele
+
+    return maxi, mini
+
