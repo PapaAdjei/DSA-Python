@@ -37,7 +37,7 @@ form of a tuple of length two. Do not use the built-in functions min or max
 in implementing the solutions
 """
 
-def minmax(data):
+def min_max(data):
    
     maxi = data[0]
     mini = data[0]
@@ -51,3 +51,15 @@ def minmax(data):
 
     return maxi, mini
 
+#R-1.4
+"""
+Write a short Python Function that takes a positive integer n and retuens 
+the sum of squares of all the positive integers smallthan n
+"""
+def sum_of_squares(n):
+    n -= 1
+    sum_sq = 0
+    while n > 0:
+        sum_sq += n**2
+        n -= 1
+    return sum_sq
